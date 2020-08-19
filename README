@@ -1,0 +1,26 @@
+###
+# program to convert set file to ascii or root files
+# \author C. R. Thornsberry
+# \date May 18th, 2016
+# \contributors W. J. Ong and K. Hermansen
+# \date Aug 19th, 2020
+###
+
+
+
+To compile: 
+$ mkdir build
+$ cd build
+$ cmake ../ 
+$ make
+
+To run:
+$ ./set2ascii --var [varFile] --set [setFile] --num [numOfModules]
+(root file converter is untested)
+
+set2ascii outputs a params.dat file with all the settings
+
+parser.py theoretically could parse the params files, but needs additional
+    files listing DDAS params and whether they are bit/val
+
+
